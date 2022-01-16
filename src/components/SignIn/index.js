@@ -7,6 +7,7 @@ import {
     FormLabelSC, 
     FormNav, 
     FormSubmitSC, 
+    FormSubmitWrapperSC, 
     SignInFormSC, 
     SignInSC 
 } from './styled'
@@ -70,7 +71,9 @@ const SignIn = () => {
                         isValid={!formik.errors.password}
                     />
                 </FormInputWrapperSC>
-                <FormSubmitSC type="submit" value={'Sign Up'} />
+                <FormSubmitWrapperSC>
+                    <FormSubmitSC type="submit"><span>Sign Up</span></FormSubmitSC>
+                </FormSubmitWrapperSC>
             </SignInFormSC>
             <FormNav>
                 <span>Already a member?</span>

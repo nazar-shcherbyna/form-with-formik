@@ -71,21 +71,33 @@ export const FormInputSC = styled.input`
     }
 `
 
-export const FormSubmitSC = styled.input`
+export const FormSubmitWrapperSC = styled.div`
+    height: 48px;
+    border-radius: 24px;
+    margin: 40px 0 16px;
+    overflow: hidden;
+    background: var(--blue);
+`
+
+export const FormSubmitSC = styled.button`
     display: block;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 48px;
-    background: var(--blue);
-    border-radius: 24px;
+    height: 100%;
     border: none;
     font-weight: 500;
     font-size: 1.6rem;
     line-height: 2rem;
     color: var(--white);
     cursor: pointer;
-    margin: 40px 0 16px;
+    background: var(--blue);
+
+    &:hover > span {
+        background: linear-gradient(to right, #FFF 0, #FFD215 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 
     &:focus {
         outline: none;
