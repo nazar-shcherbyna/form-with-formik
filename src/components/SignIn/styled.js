@@ -63,10 +63,6 @@ export const FormInputSC = styled.input`
 
     &:focus {
         border: 1px solid var(--blue);
-    }
-
-
-    &:focus {
         outline: none;
     }
 
@@ -90,6 +86,10 @@ export const FormSubmitSC = styled.input`
     color: var(--white);
     cursor: pointer;
     margin: 40px 0 16px;
+
+    &:focus {
+        outline: none;
+    }
 `
 
 export const FormNav = styled.div`
